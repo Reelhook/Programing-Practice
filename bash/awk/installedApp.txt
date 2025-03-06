@@ -1,0 +1,11 @@
+yay -S picom
+yay -S stow
+yay -S polybar
+yay -S hef
+yay -S feh
+yay -S rofi
+yay -S rofi
+sudo pacman -S nvim
+sudo pacman -S neovim
+sudo pacman -S neovim -y
+sudo pacman -S exa
