@@ -1,5 +1,5 @@
 #!/bin/bash
-path='/lvl1/lv2/'
+path='/lvl1/lvl2/'
 # Create folders and files
 for i in {1..10}
 do
