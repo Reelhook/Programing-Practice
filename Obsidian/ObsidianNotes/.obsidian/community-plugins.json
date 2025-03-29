@@ -1,4 +1,7 @@
 [
   "templater-obsidian",
-  "dataview"
+  "dataview",
+  "tag-wrangler",
+  "obsidian-mind-map",
+  "dynamic-outline"
 ]

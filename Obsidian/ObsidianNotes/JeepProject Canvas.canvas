@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"64a70f1643ee3f92","type":"file","file":"Main/03 MOCS/00_Cars.md","x":-509,"y":-201,"width":400,"height":400},
+		{"id":"ada7122dba3de2cf","type":"file","file":"Main/03 MOCS/000_Gladiator.md","x":80,"y":20,"width":400,"height":400},
+		{"id":"cda9f63646413f8b","type":"file","file":"Main/03 MOCS/000_Jeep.md","x":80,"y":-485,"width":344,"height":385}
+	],
+	"edges":[
+		{"id":"f4c74bfa1ab53ff3","fromNode":"64a70f1643ee3f92","fromSide":"right","toNode":"ada7122dba3de2cf","toSide":"left"},
+		{"id":"e517dcca7dbf50d5","fromNode":"64a70f1643ee3f92","fromSide":"right","toNode":"cda9f63646413f8b","toSide":"left"}
+	]
+}

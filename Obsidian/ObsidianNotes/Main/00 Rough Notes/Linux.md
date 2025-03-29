@@ -1,0 +1,5 @@
+---
+tags:
+  - programming/linux
+---
+[[Bash]]

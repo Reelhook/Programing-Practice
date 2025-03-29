@@ -8,31 +8,86 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f479160aa5191b02",
+            "id": "18134a757ce2d1e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Timestamps/2025-03-11.md",
+                "file": "Main/00 Rough Notes/How Linux Works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-11"
+              "title": "How Linux Works"
             }
           },
           {
-            "id": "86fb37d0028d97b6",
+            "id": "2dc1b48c01750f0b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Z_Templates/TMP-DailyNotes.md",
+                "file": "Main/05 Atomic Notes/Linux Commands List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TMP-DailyNotes"
+              "title": "Linux Commands List"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b8be8e8352f4f9ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e31af604bc35872",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Main/00 Rough Notes/How Linux Works.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": true,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4444444444444444,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of How Linux Works"
+            }
+          },
+          {
+            "id": "b4f315c7cc63a8cc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Main/01 Source Material/Books/operating_systems/How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward"
             }
           }
         ],
@@ -56,7 +111,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -68,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "how linux",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +144,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,17 +165,16 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Z_Templates/TMP-DailyNotes.md",
-                "collapseAll": true,
-                "extraContext": false,
+                "collapseAll": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for TMP-DailyNotes"
+              "title": "Backlinks"
             }
           },
           {
@@ -128,12 +183,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Z_Templates/TMP-DailyNotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from TMP-DailyNotes"
+              "title": "Outgoing links"
             }
           },
           {
@@ -157,20 +211,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Z_Templates/TMP-DailyNotes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TMP-DailyNotes"
+              "title": "Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,34 +238,48 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "86fb37d0028d97b6",
+  "active": "18134a757ce2d1e0",
   "lastOpenFiles": [
-    "Timestamps/2025/03-March/2025-03-11-Tuesday.md",
-    "White Paper.md",
-    "Timestamps/2025/03-March",
-    "Timestamps/2025",
-    "Timestamps",
-    "Timestamps.md",
-    "Timestamps/2025-03-11.md",
-    "Personal",
-    "Work/COEs/MUOS.md",
+    "Main/01 Source Material/Books/README.md",
+    "Main/01 Source Material/Books/operating_systems/How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward.pdf",
+    "Main/00 Rough Notes/How Linux Works.md",
+    "Main/05 Atomic Notes/Linux Commands List.md",
+    "Main/01 Source Material/Books/artificial_intelligence/machine_learning/deep_learning/nndl-book.pdf",
+    "Main/03 MOCS/00_Learning.md",
+    "Books.md",
+    "Main/01 Source Material/Books/computer_network/Computer Networking A Top-Down Approach 8th Edition by James W. Kurose, Keith W. Ross.pdf",
+    "Main/01 Source Material/Books/github/github_roam/online version.md",
+    "Main/01 Source Material/20250324_211947.jpg",
+    "Main/01 Source Material/Books/mathematics/linear_algebra/introduction_to_linear_algebra/Solutions Manual for Introduction to Linear Algebra Fifth Edition by Gilbert Strang.pdf",
+    "Main/01 Source Material/Books/mathematics/linear_algebra/introduction_to_linear_algebra/Introduction to Linear Algebra Fifth Edition by Gilbert Strang.pdf",
+    "Main/01 Source Material/Books/mathematics/calculus/thomas_calculus/Thomas Calculus 14th Edition by George B. Thomas, Joel R. Hass, Christopher Heil, Maurice D. Weir.pdf",
+    "Main/01 Source Material/Books/mathematics/calculus/thomas_calculus/Instructors Solutions Manual to Thomas Calculus 14th Edition by Duane Kouba, George B. Thomas, Maurice D. Weir, Joel R. Hass.pdf",
+    "Main/01 Source Material/Books/mathematics/calculus/stewart_calculus/Instructor’s Solutions Manuals for Calculus Early Transcendentals 9th Edition by James Stewart, Daniel K. Clegg, Saleem Watson.pdf",
+    "Main/01 Source Material/Books/mathematics/calculus/stewart_calculus/Calculus Early Transcendentals 9th Edition by James Stewart, Daniel K. Clegg, Saleem Watson, Lothar Redlin.pdf",
+    "Main/01 Source Material/Books/mathematics/calculus/stewart_calculus/Calculus Early Transcendentals 9th Edition Metric Edition by James Stewart, Daniel Clegg, Saleem Watson.pdf",
+    "Pasted image 20250324224719.png",
+    "JeepProject Canvas.canvas",
+    "Main/01 Source Material/20231023_110620.jpg",
+    "Main/04 daily Notes/2025/03-March/2025-03-21-Friday.md",
+    "Main/04 daily Notes/2025/03-March/2025-03-24-Monday.md",
+    "Main/04 daily Notes/2025/03-March/2025-03-23-Sunday.md",
+    "Main/04 daily Notes/2025/03-March/2025-03-22-Saturday.md",
+    "Templates/BOOK_TMP.md",
+    "Main/05 Atomic Notes/Crockpot Tuscan Chicken.md",
+    "Main/05 Atomic Notes/HomeAssistant.md",
+    "Main/05 Atomic Notes/Interior Reno.md",
+    "Main/05 Atomic Notes/Mississippi Pot Roast.md",
+    "Main/05 Atomic Notes/Obsidian Cheat Sheet.md",
+    "Main/05 Atomic Notes/Programming.md",
+    "Main/05 Atomic Notes/WiringHarnessBOM.md",
+    "Main/05 Atomic Notes/Wiring harness.md",
+    "Main/05 Atomic Notes/Quick References.md",
+    "Main/00 Rough Notes/Wirning Harness Videos.md",
+    "Main/00 Rough Notes/Paint interior.md",
+    "Main/00 Rough Notes/Linux.md",
+    "Main/00 Rough Notes/HAThermostate.md",
+    "Main/00 Rough Notes/Bills.md",
     "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "Z_Templates/TMP-DailyNotes.md",
-    "Z_Templates",
-    "Work/COEs/OBS PKG 3.md",
-    "Work/Work.md",
-    "Work/COEs/KC-135.md",
-    "Work/COEs/C-130J.md",
-    "Work/Phases/SRR.md",
-    "Untitled.canvas",
-    "Personal/Jeep.md",
-    "Personal/Personal.md",
-    "Work/Phases/PDR.md",
-    "PDR",
-    "Work/Phases",
-    "Work/COEs",
-    "Welcome.md",
-    "Work"
+    "Untitled 1.canvas"
   ]
 }
