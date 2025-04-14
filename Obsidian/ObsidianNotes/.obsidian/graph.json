@@ -1,7 +1,7 @@
 {
-  "collapse-filter": false,
-  "search": "-path:Templates  ",
-  "showTags": true,
+  "collapse-filter": true,
+  "search": "-path:\"Main/01 Source Material\"  -path:Templates  ",
+  "showTags": false,
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "tag:#Recipe  ",
+      "query": "path:",
       "color": {
         "a": 1,
         "rgb": 16056283
@@ -34,18 +34,25 @@
         "a": 1,
         "rgb": 2822143
       }
+    },
+    {
+      "query": "tag:#book/current  ",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.447916666666667,
-  "repelStrength": 8.75,
-  "linkStrength": 1,
+  "centerStrength": 0.744791666666667,
+  "repelStrength": 14.5833333333333,
+  "linkStrength": 0.786458333333333,
   "linkDistance": 57,
-  "scale": 0.32345003090091917,
-  "close": false
+  "scale": 0.31214753848498694,
+  "close": true
 }
