@@ -1,4 +1,6 @@
 [[Python Crash Course 2nd Edition.pdf]]
+[[beginners-python-cheat-sheets.pdf|Python CheatSheet]]
+
 
 
 ## CheatSheat

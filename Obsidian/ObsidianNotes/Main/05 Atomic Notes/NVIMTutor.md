@@ -259,7 +259,7 @@ NOTE: Pressing just the motion while in Normal mode without an operator
 ** Typing a number before a motion repeats it that many times. **
 
  1. Move the cursor to the start of the line marked ✓ below.
-
+	
  2. Type `2w`{normal} to move the cursor two words forward.
 
  3. Type `3e`{normal} to move the cursor to the end of the third word forward.

@@ -1,9 +1,9 @@
 {
-  "collapse-filter": true,
-  "search": "-path:\"Main/01 Source Material\"  -path:Templates  ",
+  "collapse-filter": false,
+  "search": "",
   "showTags": false,
   "showAttachments": true,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
@@ -53,6 +53,6 @@
   "repelStrength": 14.5833333333333,
   "linkStrength": 0.786458333333333,
   "linkDistance": 57,
-  "scale": 0.31214753848498694,
+  "scale": 1.6081201090769266,
   "close": true
 }
