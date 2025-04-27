@@ -1,8 +1,10 @@
 {
-    "Test2": {
-        "principal": 10000.0,
-        "annual_rate": 6.9,
+    "Test": {
+        "principal": 28000.0,
+        "annual_rate": 6.0,
         "term_years": 5,
+        "start_date": "2025-01-01",
+        "monthly_payment": 541.3184428239916,
         "date_added": "2025-04-26"
     }
 }
