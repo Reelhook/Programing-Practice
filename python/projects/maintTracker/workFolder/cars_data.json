@@ -1,0 +1,18 @@
+{
+    "z121j": {
+        "make": "Jeep",
+        "model": "Gladiator",
+        "year": 2021,
+        "odometer": 44001.0,
+        "maintenance": [
+            {
+                "task": "Oil change",
+                "date": "2025-04-26",
+                "recorded_odometer": 44001.0,
+                "due_interval": 6000.0,
+                "due_days": 180.0,
+                "notes": "Used Amsoil synthic oil, its good for 10K but changing sooner"
+            }
+        ]
+    }
+}
