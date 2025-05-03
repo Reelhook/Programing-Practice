@@ -145,17 +145,28 @@ def update_all_remaining_balances():
 
 
 def plot_amortization(schedule, loan_name):
-    """Graph the loan repayment schedule with a marker for the current date."""
+    """Graph the loan repayment schedule with markers for the current date."""
     dates = [datetime.strptime(entry[1], "%Y-%m-%d") for entry in schedule]
-    principal_payments = [entry[3] for entry in schedule]
+    scheduled_principal = [entry[3] for entry in schedule]
+    additional_principal = [
+        entry[4] for entry in schedule
+    ]  # New series for extra payments
     interest_payments = [entry[5] for entry in schedule]
     remaining_balances = [entry[6] for entry in schedule]
 
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
 
-    # Plot the breakdown of each payment
-    ax1.plot(dates, principal_payments, label="Scheduled Principal", color="green")
+    # Plot the breakdown of each payment in the first subplot
+    ax1.plot(dates, scheduled_principal, label="Scheduled Principal", color="green")
     ax1.plot(dates, interest_payments, label="Interest Payment", color="red")
+    # New line to show additional payments
+    ax1.plot(
+        dates,
+        additional_principal,
+        label="Additional Payment",
+        color="orange",
+        linestyle="--",
+    )
     ax1.set_title(f"Monthly Payment Breakdown - {loan_name}")
     ax1.set_xlabel("Date")
     ax1.set_ylabel("Amount ($)")
@@ -166,7 +177,7 @@ def plot_amortization(schedule, loan_name):
     current_date = datetime.now()
     ax1.axvline(x=current_date, color="purple", linestyle="--", label="Current Date")
 
-    # Plot remaining balance over time
+    # Plot remaining balance over time in the second subplot
     ax2.plot(dates, remaining_balances, label="Remaining Balance", color="blue")
     ax2.set_title(f"Remaining Loan Balance Over Time - {loan_name}")
     ax2.set_xlabel("Date")
@@ -175,7 +186,7 @@ def plot_amortization(schedule, loan_name):
     ax2.grid(True)
     ax2.axvline(x=current_date, color="purple", linestyle="--", label="Current Date")
 
-    # Format dates on x-axis
+    # Format dates on x-axis for both subplots
     for ax in [ax1, ax2]:
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
         plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)

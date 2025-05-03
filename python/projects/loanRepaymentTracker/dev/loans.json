@@ -1,10 +1,37 @@
 {
-    "Test": {
-        "principal": 28000.0,
-        "annual_rate": 6.0,
+    "beta": {
+        "principal": 30000.0,
+        "annual_rate": 6.9,
         "term_years": 5,
-        "start_date": "2025-01-01",
-        "monthly_payment": 541.3184428239916,
-        "date_added": "2025-04-26"
+        "start_date": "2024-01-01",
+        "monthly_payment": 592.6215710916103,
+        "date_added": "2025-05-02",
+        "additional_payments": [
+            {
+                "date": "2024-10-05",
+                "amount": 10000.0
+            }
+        ],
+        "remaining_balance": 22519.759876490563
+    },
+    "home": {
+        "principal": 600000.0,
+        "annual_rate": 7.1,
+        "term_years": 30,
+        "start_date": "2025-06-01",
+        "monthly_payment": 4032.1917576623914,
+        "date_added": "2025-05-02",
+        "additional_payments": [],
+        "remaining_balance": 600000.0
+    },
+    "home2": {
+        "principal": 600000.0,
+        "annual_rate": 2.9,
+        "term_years": 30,
+        "start_date": "2025-06-01",
+        "monthly_payment": 2497.3798808360148,
+        "date_added": "2025-05-02",
+        "additional_payments": [],
+        "remaining_balance": 600000.0
     }
 }

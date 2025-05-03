@@ -45,6 +45,7 @@ def calculate_amortization(
 ):
     """
     Compute the loan amortization schedule including additional payments.
+
     Returns a list of tuples in the format:
       (payment number, payment date, monthly_payment, scheduled_principal,
        additional_payment, interest_payment, new_balance)
@@ -55,7 +56,7 @@ def calculate_amortization(
 
     if additional_payments is None:
         additional_payments = []
-    # Sort additional payments by date (format "YYYY-MM-DD")
+    # Sort additional payments by date (assumed to be in "YYYY-MM-DD" format)
     additional_payments = sorted(additional_payments, key=lambda x: x["date"])
 
     schedule = []
@@ -107,43 +108,6 @@ def calculate_amortization(
     return schedule
 
 
-def update_remaining_balance_for_loan(loan):
-    """
-    Update a single loan's meta data with a "remaining_balance" attribute.
-    This calculates the remaining balance based on today's date,
-    accounting for standard and additional payments.
-    """
-    schedule = calculate_amortization(
-        loan["principal"],
-        loan["annual_rate"],
-        loan["term_years"],
-        loan["start_date"],
-        loan.get("additional_payments", []),
-    )
-    today_date = date.today()
-    last_payment = None
-    # Find the most recent payment that is on or before today's date
-    for payment in schedule:
-        payment_date = datetime.strptime(payment[1], "%Y-%m-%d").date()
-        if payment_date <= today_date:
-            last_payment = payment
-        else:
-            break
-    if last_payment:
-        loan["remaining_balance"] = last_payment[6]
-    else:
-        loan["remaining_balance"] = loan["principal"]
-
-
-def update_all_remaining_balances():
-    """Update the remaining_balance field for all loans and save changes."""
-    loans = load_loans()
-    for loan in loans.values():
-        update_remaining_balance_for_loan(loan)
-    save_loans(loans)
-    return loans
-
-
 def plot_amortization(schedule, loan_name):
     """Graph the loan repayment schedule with a marker for the current date."""
     dates = [datetime.strptime(entry[1], "%Y-%m-%d") for entry in schedule]
@@ -153,7 +117,7 @@ def plot_amortization(schedule, loan_name):
 
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
 
-    # Plot the breakdown of each payment
+    # Plot scheduled principal and interest payments
     ax1.plot(dates, principal_payments, label="Scheduled Principal", color="green")
     ax1.plot(dates, interest_payments, label="Interest Payment", color="red")
     ax1.set_title(f"Monthly Payment Breakdown - {loan_name}")
@@ -162,7 +126,7 @@ def plot_amortization(schedule, loan_name):
     ax1.legend()
     ax1.grid(True)
 
-    # Add vertical line for current date
+    # Add vertical current date marker
     current_date = datetime.now()
     ax1.axvline(x=current_date, color="purple", linestyle="--", label="Current Date")
 
@@ -175,7 +139,7 @@ def plot_amortization(schedule, loan_name):
     ax2.grid(True)
     ax2.axvline(x=current_date, color="purple", linestyle="--", label="Current Date")
 
-    # Format dates on x-axis
+    # Rotate date labels
     for ax in [ax1, ax2]:
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
         plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)
@@ -201,7 +165,6 @@ def add_loan():
         start_date = input(
             "Enter loan start date (YYYY-MM-DD) or press Enter for next month: "
         ).strip()
-
         if not start_date:
             start_date = (
                 date.today().replace(day=1) + relativedelta(months=1)
@@ -219,8 +182,7 @@ def add_loan():
         "start_date": start_date,
         "monthly_payment": monthly_payment,
         "date_added": datetime.now().strftime("%Y-%m-%d"),
-        "additional_payments": [],
-        "remaining_balance": principal,  # Initialize with the principal amount
+        "additional_payments": [],  # Initialize an empty list for extra payments
     }
 
     save_loans(loans)
@@ -229,23 +191,24 @@ def add_loan():
 
 
 def view_loans():
-    """Display all stored loans (updating remaining balance first)."""
-    loans = update_all_remaining_balances()
+    """Display all stored loans."""
+    loans = load_loans()
     if not loans:
         print("\nNo loans found in the system.")
         return
 
     print("\nCurrent Loans:")
-    print("-" * 120)
-    header = f"{'Loan Name':<15} {'Principal':<12} {'Rate':<8} {'Term':<8} {'Monthly':<12} {'Start Date':<12} {'Remaining':<12} {'Added':<12}"
-    print(header)
-    print("-" * 120)
+    print("-" * 105)
+    print(
+        f"{'Loan Name':<15} {'Principal':<12} {'Rate':<8} {'Term':<8} {'Monthly':<12} {'Start Date':<12} {'Added':<12}"
+    )
+    print("-" * 105)
     for name, details in loans.items():
         print(
             f"{name:<15} ${details['principal']:<11,.2f} "
             f"{details['annual_rate']:<8}% {details['term_years']:<8} "
             f"${details['monthly_payment']:<11,.2f} {details['start_date']:<12} "
-            f"${details.get('remaining_balance', details['principal']):<11,.2f} {details['date_added']:<12}"
+            f"{details['date_added']:<12}"
         )
 
 
