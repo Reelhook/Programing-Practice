@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Main/05 Atomic Notes/NVIMTutor.md",
+                    "file": "Gladiator_Maintance.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "NVIMTutor"
+                  "title": "Gladiator_Maintance"
                 }
               }
             ]
@@ -39,7 +39,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Main/05 Atomic Notes/NVIMTutor.md",
+                    "file": "Gladiator_Maintance.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -49,7 +49,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for NVIMTutor"
+                  "title": "Backlinks for Gladiator_Maintance"
                 }
               }
             ]
@@ -206,10 +206,13 @@
   },
   "active": "f6b8084639b9cde0",
   "lastOpenFiles": [
+    "maintenance_report.md",
+    "Main/03 MOCS/000_Gladiator.md",
+    "Gladiator_Maintance.md",
+    "Main/05 Atomic Notes/NVIMTutor.md",
     "Main/05 Atomic Notes/NVIMTutor.txt",
     "operating_systems/How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward.pdf.md",
     "Main/01 Source Material/Books/programming_language/python/LoanRepayment.py.md",
-    "Main/05 Atomic Notes/NVIMTutor.md",
     "Main/01 Source Material/Books/programming_language/python/Python.md",
     "Main/05 Atomic Notes/Programming.md",
     "Main/01 Source Material/Books/mathematics/linear_algebra/introduction_to_linear_algebra/Introduction to Linear Algebra Fifth Edition by Gilbert Strang.pdf",
@@ -226,7 +229,6 @@
     "computer_network",
     "Main/01 Source Material/Books/Books.md",
     "Main/01 Source Material/Books/operating_systems/How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward.pdf",
-    "Main/01 Source Material/Books/computer_network/Computer Networking A Top-Down Approach 8th Edition by James W. Kurose, Keith W. Ross.pdf",
     "Main/01 Source Material/Books/github/github_roam/online version.md",
     "Main/04 Daily Notes/2025/04-April/2025-04-11-Friday.md",
     "Main/01 Source Material/NVIMCheatSheet.png"
