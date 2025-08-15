@@ -1,4 +1,0 @@
----
-tags:
-  - Project/Jeep/interior
----

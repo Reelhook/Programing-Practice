@@ -1,0 +1,13 @@
+---
+tags:
+  - BOM
+  - Project/Jeep/WiringHarness
+---
+- [ ] Wires
+	- [ ] 16 G
+	- [ ] 18 G
+	- [ ] Wire Wrap
+- [ ] Crimping tool
+- [ ] Connector
+- [ ] Wire ties
+- [ ] Zip-ties

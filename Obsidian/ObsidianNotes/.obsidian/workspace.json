@@ -4,42 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "424772fce9312441",
+        "id": "95a8df65d8468496",
         "type": "split",
         "children": [
           {
-            "id": "e807a1cb15eb38e1",
+            "id": "e2ca8fab4c568432",
             "type": "tabs",
-            "dimension": 80.82454458293384,
+            "dimension": 76.24521072796935,
             "children": [
               {
-                "id": "f6b8084639b9cde0",
+                "id": "fd4a71439ff79899",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Gladiator_Maintance.md",
+                    "file": "Main/00_MOCS/Cars/000_Jeep.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Gladiator_Maintance"
-                }
+                  "title": "000_Jeep"
+                },
+                "group": "28aad7224d25f61e"
               }
             ]
           },
           {
-            "id": "e08c05c28050d0da",
+            "id": "6a292e4c1fbeddb8",
             "type": "tabs",
-            "dimension": 19.175455417066157,
+            "dimension": 23.754789272030653,
             "children": [
               {
-                "id": "db36a74f1b2d8874",
+                "id": "139678929eadeb92",
                 "type": "leaf",
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Gladiator_Maintance.md",
+                    "file": "Main/00_MOCS/Cars/000_Jeep.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -49,8 +50,9 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for Gladiator_Maintance"
-                }
+                  "title": "Backlinks for 000_Jeep"
+                },
+                "group": "28aad7224d25f61e"
               }
             ]
           }
@@ -87,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Project/Jeep/interior",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e19842a420eadec8",
@@ -129,7 +130,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Main/05 Atomic Notes/NVIMTutor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for NVIMTutor"
+              "title": "Backlinks"
             }
           },
           {
@@ -186,7 +186,8 @@
               "title": "Outline of NVIMTutor"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -204,33 +205,45 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f6b8084639b9cde0",
+  "active": "37f16da0173d23a9",
   "lastOpenFiles": [
-    "maintenance_report.md",
-    "Main/03 MOCS/000_Gladiator.md",
-    "Gladiator_Maintance.md",
-    "Main/05 Atomic Notes/NVIMTutor.md",
-    "Main/05 Atomic Notes/NVIMTutor.txt",
-    "operating_systems/How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward.pdf.md",
-    "Main/01 Source Material/Books/programming_language/python/LoanRepayment.py.md",
-    "Main/01 Source Material/Books/programming_language/python/Python.md",
-    "Main/05 Atomic Notes/Programming.md",
-    "Main/01 Source Material/Books/mathematics/linear_algebra/introduction_to_linear_algebra/Introduction to Linear Algebra Fifth Edition by Gilbert Strang.pdf",
-    "Main/01 Source Material/Books/data_structures_and_algorithms/Introduction to Algorithms 4th edition by Thomas H. Cormen, Charles E. Leiserson.pdf",
-    "Main/01 Source Material/Books/programming/Dive Into Refactoring by Alexander Shvets.pdf",
-    "Main/01 Source Material/Books/programming_language/python/Python Crash Course 2nd Edition.pdf",
-    "Main/01 Source Material/Books/beginners-python-cheat-sheets.pdf",
-    "computer_network/Computer Networking A Top-Down Approach 8th Edition by James W. Kurose%2C Keith W. Ross.pdf.md",
-    "programming_language/python/Python Crash Course 2nd.Edition.epub.md",
-    "programming_language/python/Python Crash Course 2nd Edition.pdf.md",
-    "programming_language/python",
-    "programming_language",
-    "Main/01 Source Material/Books/README.md",
+    "Main/00_MOCS/00_Hobbies.md",
+    "999_Quick References.md",
+    "000_Engineering.md",
+    "Engineering.md",
+    "000_Books.md",
+    "Books.md",
+    "Dataview Overview.md",
+    "0000_Dataview.md",
+    "jeepCanbusGauge.md",
+    "Main/00_MOCS/Cars/000_Jeep.md",
+    "Main/00_MOCS/Cars/Jeep/Interior Reno.md",
+    "Main/0_Main.md",
+    "Main/00_MOCS/Cars/Gladiator/JeepProject Canvas.canvas",
+    "Main/00_MOCS/Cars/Jeep/Paint interior.md",
+    "Main/00_MOCS/Learning/Programing/maintenance_report.md",
+    "Main/04 Daily Notes/2025/03-March/2025-03-24-Monday.md",
+    "Main/00_MOCS/Cars/Jeep/WiringHarnessBOM.md",
+    "Main/00_MOCS/Cars/Gladiator/Gladiator_Maintance.md",
+    "Project.md",
+    "Main/00_MOCS/Adulting/Travel/NewYork2026.md",
+    "Main/00_MOCS/Adulting/000_Trip.md",
+    "Main/00_MOCS/00_Adulting.md",
+    "Main/00_MOCS/Adulting/000_Cooking.md",
+    "Main/00_MOCS/Adulting/Cooking/99_Recipes.md",
+    "Main/00_MOCS/Cars/000_Gladiator.md",
+    "Main/00_MOCS/Adulting/Cooking/Butter Chicken.md",
+    "Main/00_MOCS/Learning/000_Programming.md",
+    "Main/00_MOCS/Adulting/Travel",
+    "Main/01 Source Material/Books/programming_language",
+    "Main/01 Source Material/Books",
+    "Main/01 Source Material",
+    "Main/00_MOCS/Learning",
+    "Main/01 Attachments/Books/programming_language",
+    "Main/01 Attachments/Books",
+    "Main/01 Attachments",
     "computer_network",
-    "Main/01 Source Material/Books/Books.md",
-    "Main/01 Source Material/Books/operating_systems/How Linux Works What Every Superuser Should Know 3rd Edition by Brian Ward.pdf",
-    "Main/01 Source Material/Books/github/github_roam/online version.md",
-    "Main/04 Daily Notes/2025/04-April/2025-04-11-Friday.md",
-    "Main/01 Source Material/NVIMCheatSheet.png"
+    "Main/00_MOCS/Cars/Gladiator",
+    "Main/01_Attachements/NVIMCheatSheet.png"
   ]
 }

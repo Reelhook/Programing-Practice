@@ -147,6 +147,18 @@ def remove_record(conn):
         print("Deletion cancelled.")
 
 
+def admin():
+    conn = create_database()
+    print("1. Update maintenance record")
+    print("2. Remove maintenance record")
+    selection = input("Enter your choice (1-2): ").strip()
+
+    if selection == "1":
+        remove_record(conn)
+    elif selection == "2":
+        pass
+
+
 def main():
     conn = create_database()
     while True:
@@ -154,7 +166,8 @@ def main():
         print("1. Add maintenance record")
         print("2. View maintenance records")
         print("3. Generate maintenance documentation report")
-        print("4. Remove maintenance record")
+        # print("4. Remove maintenance record")
+        print("4. Admin Page")
         print("5. Exit")
         choice = input("Enter your choice (1-5): ").strip()
 
@@ -266,7 +279,7 @@ def main():
             generate_report(conn)
 
         elif choice == "4":
-            remove_record(conn)
+            admin(conn)
 
         elif choice == "5":
             print("Exiting the program.")
